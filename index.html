@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
- 
+
 <head>
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-206370536-1"></script>
- <script>
+ 
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-205255955-1"></script>
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-206370536-1');
- </script>
- 
+  gtag('config', 'UA-205255955-1');
+</script>
+
  </head>
  <!-- Loads <model-viewer> for modern browsers: -->
  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
@@ -31,6 +31,7 @@
 
   <!-- OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
   <script src="https://unpkg.com/resize-observer-polyfill/dist/ResizeObserver.js"></script>
+ 
  
  <script>
       function Sync(selector, audioSelector) {
@@ -89,7 +90,7 @@ var promise = sound.play();
       }
    </script>
  
-<script>
+ <script>
 /**
 * Function that registers a click on an outbound link in Analytics.
 * This function takes a valid URL string as an argument, and uses that URL string
@@ -105,19 +106,26 @@ var getOutboundLink = function(url) {
   });
 }
 </script>
-
+ 
 <style> 
  
 .container {
  column-count: 2;
- column-width: 250px;
- column-gap: 10px;
+ column-width: 400px;
+ column-gap: 5px;
 }
   .card {
   break-inside: avoid;
-  background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(255, 255, 255);
-  padding: 10px;
+  background-color: #00BBB4;
+  border: 2px solid rgb(0, 187, 185);
+  padding: 5px;
+  margin: 0 0 1em 0;
+}
+  .card1 {
+  break-inside: avoid;
+  background-color: #FFFFFF;
+  border: 2px solid rgb(0, 187, 185);
+  padding: 5px;
   margin: 0 0 1em 0;
 }
 }
@@ -128,40 +136,57 @@ var getOutboundLink = function(url) {
     margin: 10px auto 10px;
     display: block;
 }
+ .centerImage
+{
+ text-align:center;
+ display:block;
+}
 </style>
+ 
+<body bgcolor= #00BBB4>
 
-<body>
+ <body>
 
 <!--<h1>The column-count Property</h1> -->
 <!--<p>The column-count property defines the number of columns an element is divided into:</p> -->
 
 <div class="container">
     <div class="card">
-      <img class="marginauto" src="images/LincolnSM_Logo_LiveWork_blue.png" alt="Logo" style="width: auto; height: 100px"> 
-      <h2 style="text-align: center;" markdown="1"><b style="color:#0081ae;"><p style="font-family:calibri"> The Live-work lifestyle at one of Santa Monica’s most bustling intersections!</p></h2></b>
-      <h2 style="text-align: center;" markdown="1"><b style="color:#0081ae;"><p style="font-family:calibri"> Live Work Unit "A" Model Tour</p></h2></b>
-     <div class="card">
-      <model-viewer camera-controls camera-orbit="-90deg 45deg 75%" id="reveal" loading="eager" src="Models/Lincoln Unit A_4.glb" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="Models/usdz-lincoln_unit_a_4___1630105463932.usdz" alt="Lincoln SM" auto-rotate-delay="0" ar-scale="auto" camera-controls="" style="width: 100%; height: 600px" exposure="0.5"> <button slot="ar-button" style="background-color: rgb(255, 255, 255); border-radius: 8px; border: 1 px solid black; position: absolute; top: 20px; right: 20px; height: 40px; width: auto;">
-       👆 <strong>AR CLICK HERE</strong>
-  </button>
-</model-viewer>
-  </div>
+      <img class="marginauto" src="images/K18_Logo_White.png" alt="Logo" style="width: auto; height: 100px"> 
+    
+   <div class="card">
+       <model-viewer src="Models/AR_57seconds_withoutBanner.glb?sound=Sound/K18 Edit 57sec_3.mp3"
+                    autoplay animation-name="" id="interaction" ar ar-modes="scene-viewer webxr quick-look" ios-src="Models/K18.reality"
+                    alt="K18 Fiber Journey" auto-rotate-delay="0" ar-scale="auto"
+                    slot= "progress-bar"
+                    style="z-index: 1; width: 100%; height: 480px; position: static; ">
+                    <button slot="ar-button" 
+                    style="z-index: 9; background-color: #ff595a; border-radius: 8px; border: 1 px solid white; position: absolute; top: 0; right: 0; height: 40px; width: auto; ">
+                     👆 <b style="color:#FFFFFF;"><strong>AR Click Here</strong></button>  
+                     
+     <div class="card1">
+     <model-viewer id="model-viewer" loading="eager" src="Models/K18_TEST_Ver.5.glb?sound=Sound/K18 VOICE.mp3" camera-controls
+                   camera-orbit="0deg 90deg 30%" autoplay animation-name="" id="reveal"
+                   ios-src="Models/K18.reality" alt="K18 Fiber Journey" auto-rotate-delay="0" camera-controls alt="K18-Test-Demo-3"
+                   style="z-index: 2; width: 100%; height: 500px; position: static; ">
   
-</model-viewer>
-  </div>
- 
+     </model-viewer>
+     </div>   
+   </model-viewer>
+        </div>
+  
      <section class="attribution">
         <div>
-          <!--<span>
-            <h1 style="text-align: center;" markdown="1"><p style="font-family:calibri"></p></h1>
+          <span>
+         <h1 style="text-align: center;" markdown="1"><b style="color:#FFFFFF;"><p style="font-family: '-apple-system', helvetica neue LT Pro"><b>LISTEN TO NARRATION</b>
               <p align="center">
               <span>
               <audio controls autoplay loop id="sound">
-                <source src="Sound/?????.mp3"/>
+                <source src="Sound/K18 VOICE.mp3"/>
               </audio
             ></span> 
              </p>
-            </span> -->
+            </span>
          </div>
    </section>
    <script>    
@@ -169,31 +194,38 @@ var getOutboundLink = function(url) {
           Sync("#model-viewer", "#sound");
         });
       </script>
+   <br><br>
+  
+    <h2 style="text-align: center;" markdown="1"><b style="color:#FFFFFF;"><p style="font-family: '-apple-system', helvetica neue LT Pro"><b>FOLLOW THE SCIENCE</b>
+     <br><br>
      
-   <div class="card">
-     <h2 style="text-align: center;" markdown="1"><p style="font-family:calibri"><b>EXPLORE OTHER FLOORPLANS:</b><a href="https://avertek.github.io/SRG-Lincoln-SM-Unit-C/" onclick="getOutboundLink('https://avertek.github.io/SRG-Lincoln-SM-Unit-C/');return false;"><b style="color:#0081ae;"><b> HERE</b></b></h2></a></p></a></h2>
-     <h2 style="text-align: center;" markdown="1"><p style="font-family:calibri"><b>LIVE WORK VIP UNIT:</b><a href="mailto:LincolnSM.AVERtekSMLW.SaresRegis@aptleasing.info?Subject=Requesting VIP Tour Lincoln SM" onclick="getOutboundLink('mailto:LincolnSM.AVERtekSMLW.SaresRegis@aptleasing.info'); return false;"><b style="color:#0081ae;"><b> TOUR REQUEST</b></h2></a></p></a>
-     <br>
-     <h2 style="text-align: center;" markdown="1"><p style="font-family:calibri"><a href="tel:+18333495305"><b style="color:#0081ae;">833-349-5305</a></b></b></p></h2>
-     <h2 style="text-align: center;" markdown="1"><b style="color:#000000;"><p style="font-family:calibri"> 1447 Lincoln Blvd, Santa Monica, CA 90401 </p></h2></b>
-   </div>
+    <button onclick="location.href='https://www.k18hair.com/pages/our-science'" type="button" slot="" 
+                    style="z-index: 9; background-color: #ff595a; border-radius: 8px; border: 1 px solid white; position: static; height: 35px; width: auto;
+                          color:#FFFFFF; font-family: '-apple-system', helvetica neue LT Pro; "><strong>LEARN MORE HERE</strong>
+
+       </button> 
+     
+       <button onclick="location.href='https://www.k18hair.com/pages/our-science'" type="button" slot="" 
+                    style="z-index: 9; background-color: #ff595a; border-radius: 8px; border: 1 px solid white; position: static; height: 35px; width: auto;
+                           color:#FFFFFF; font-family: '-apple-system', helvetica neue LT Pro; "><strong>JOIN OUR CRUSADE</strong>
+       </button> 
+        </div>
    
-   <div class="card">
-    <img class="marginauto" src="images/AR Instructions ext 3c.png" style="max-width: 100%; height: 700px">
-    
-    </style>  
-   </div>
+    <div class="card">
+      <img class="marginauto" src="images/K18 Symbology Sheet 8final.png" style="max-width: 100%; height: 650px"> 
+       
+    </div>
 
     <div class="card">
-    
-    </div>
-    <br>
+   <br><br>
+     <h4 style="text-align: center;" markdown="1"><b style="color:#FFFFFF;"><p style="font-family: '-apple-system', helvetica neue LT Pro"><em> if AR button does not appear on mobile device, use another browser</em></p></h4></b>
 
-     <h3 style="text-align: center;" markdown="1"><a href="https://avertek.net/" onclick="getOutboundLink('https://avertek.net/');
-       return false;"><b style="color:#0081ae;"><p style="font-family:calibri">Learn More About AVERtek's XR-NOW</p></a></h3></b>
+     <h3 style="text-align: center;" markdown="1"><p style="font-family: '-apple-system', helvetica neue LT Pro"><a href="https://avertek.net/" onclick="getOutboundLink('https://avertek.net/'); return false;" style="text-decoration: helvetica neue bold; border-bottom: 1px solid #ffffff; color: #ffffff;">Learn More About AVERtek's XR-NOW</a></h3>
+     
     </div>
 
 
 </div>
 </body>
 </html>
+
